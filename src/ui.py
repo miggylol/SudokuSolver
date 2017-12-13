@@ -25,22 +25,26 @@ class SudokuUI(Frame):
         """Set up all widgets on board"""
         self.parent.title("Sudoku Solver")
         self.pack(fill=BOTH)
-        save_button = Button(self,
-                            text="Save",
-                            command=self.__save)
+        save_button = Button(
+            self,
+            text="Save",
+            command=self.__save)
         save_button.pack(fill=BOTH, side=BOTTOM)
 
-        self.canvas = Canvas(self,
-                             width=WIDTH,
-                             height=HEIGHT)
+        self.canvas = Canvas(
+            self,
+            width=WIDTH,
+            height=HEIGHT)
         self.canvas.pack(fill=BOTH, side=TOP)
-        clear_button = Button(self,
-                              text="Clear",
-                              command=self.__clear)
+        clear_button = Button(
+            self,
+            text="Clear",
+            command=self.__clear)
         clear_button.pack(fill=BOTH, side=BOTTOM)
-        solve_button = Button(self,
-                              text="Solve",
-                              command=self.__solve)
+        solve_button = Button(
+            self,
+            text="Solve",
+            command=self.__solve)
         solve_button.pack(fill=BOTH, side=BOTTOM)
 
         self.__draw_grid()

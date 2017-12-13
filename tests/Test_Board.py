@@ -2,7 +2,7 @@ from src.sudoku import Board, Cell
 
 board = Board()
 passed = type(board) == Board
-print('create Board object succes: {}'.format(passed))
+print('create Board object success: {}'.format(passed))
 
 passed = True
 for r in range(9):
@@ -24,11 +24,11 @@ valid = board.is_valid()
 passed = not valid
 print('validate invalid board success: {}'.format(passed))
 
-#Test clearing the board
+# Test clearing the board
 board.clear()
 passed = True
 for r in range(9):
-	for c in range (9):
+	for c in range(9):
 		if board.board[r][c].number != 0:
 			passed = False
 print('reset the entire board success: {}'.format(passed))
@@ -36,13 +36,9 @@ print('reset the entire board success: {}'.format(passed))
 # Test solving the board
 board.solve()
 passed = board.is_valid()
-print('correctly colved board success: {}'.format(passed))
-
-#Test printing out the board
-print(str(board))
-
-
+print('correctly solved board success: {}'.format(passed))
 
 # Test printing out the board
 print(str(board))
-
+# Test printing out the board
+print(str(board))
