@@ -1,4 +1,5 @@
-# This is supposed to test teh source code. We should get back a True or False statement
+# This is supposed to test the source code. We should get back a True or False
+# statement
 
 from src.sudoku import Cell
 # imports the cell

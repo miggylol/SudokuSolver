@@ -4,6 +4,7 @@ from os import path, listdir, mkdir
 Writes and Reads the Sudoku Board
 """
 
+# Does this make a working directory no matter where it is?
 DATA_DIR = "../data/"
 
 
