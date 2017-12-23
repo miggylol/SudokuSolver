@@ -1,6 +1,7 @@
 # Miggy Reyes
 # Computer Science Major at Texas Tech University
-# Last updated on 11/9/2017
+# Code along with dlowrey
+# Credit: https://github.com/dlowrey/sudoku-solver
 
 # we have Cells, Squares, Rows and columns
 # We need to create a cell object

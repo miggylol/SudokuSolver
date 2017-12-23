@@ -9,6 +9,7 @@ DATA_DIR = "../data/"
 
 
 def ensure_data_dir():
+	# Checks to see if there is a directory made
 	data_dir = path.normpath(DATA_DIR)
 	if not path.isdir(data_dir):
 		mkdir(data_dir)
